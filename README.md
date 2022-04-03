@@ -1,6 +1,6 @@
 # Guess Game
 
-This is a guessing number game, which is made with C programming language this clone repository to download it. Enjoy :smile: 
+This is a guessing number game, which is made with C programming language. Clone this repository to download it. Enjoy :smile: 
 
 ## <b>About Me</b>
 
