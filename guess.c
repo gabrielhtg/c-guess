@@ -4,8 +4,8 @@
 
 int main () {
     char nama [100];
-    int angka;
-    int keynum = 77;
+    double angka;
+    double keynum = 77;
     char yn[1];
     int sama;
     printf("-------------------------------------------------------------------------------------------------\n");
@@ -21,7 +21,7 @@ int main () {
 
 
     printf("Yok, coba masukkan angkanya XD: ");
-    scanf("%d", &angka);
+    scanf("%lf", &angka);
     printf("-------------------------------------------------------------------------------------------------\n");
 
     while (angka != keynum) {
@@ -35,20 +35,20 @@ int main () {
         }
         else {
             printf("Wkwkwkwk mantap. Yok tebak angkanya lagi: ");
-            scanf("%d", &angka);
+            scanf("%lf", &angka);
             printf("-------------------------------------------------------------------------------------------------\n");
         }
     }
 
-    switch (angka) {
-        case 77:
-            printf("Ih benar, fix kita sehati nih %s. >///<\n", nama);
-            printf("-------------------------------------------------------------------------------------------------\n");
-            break;
-        default:
-            printf("Waduh wwkwkwk. Terima kasih telah mencoba %s :)\n", nama);  
+    if (angka == keynum) {
+        printf("Ih benar, fix kita sehati nih %s. >///<\n", nama);
+        printf("-------------------------------------------------------------------------------------------------\n");
+    }
+    else {
+        printf("Waduh wwkwkwk. Terima kasih telah mencoba %s :)\n", nama);  
             printf("-------------------------------------------------------------------------------------------------\n");
     }
+            
     return 0;
 }
 
